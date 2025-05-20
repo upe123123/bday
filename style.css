@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body, html {
+  margin: 0; padding: 0; height: 100%;
+  font-family: 'Pacifico', cursive;
+  background: #fff8f0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+canvas#kittyCanvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#card {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #e85d75;
+  text-shadow: 1px 1px 3px #fce8e8;
+}
+
+#cake-canvas {
+  cursor: pointer;
+  margin-top: 20px;
+  pointer-events: auto;
+}
+
+#wish-place {
+  display: none;
+  color: #6b3e1e;
+  font-size: 2rem;
+  padding: 40px;
+  max-width: 700px;
+  background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+  border-radius: 20px;
+  box-shadow: 0 0 15px gold;
+  position: relative;
+  z-index: 20;
+}
+
+#dancing-kitty {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+}
